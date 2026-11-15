@@ -1,3 +1,4 @@
+/* General Settings */
 * {
     margin: 0;
     padding: 0;
@@ -39,7 +40,7 @@ body {
     color: #b17cff;
 }
 
-/* Home */
+/* Home Section */
 .hero {
     min-height: 430px;
     display: flex;
@@ -73,6 +74,7 @@ body {
     margin-bottom: 25px;
 }
 
+/* Buttons */
 .btn {
     display: inline-block;
     background: linear-gradient(90deg, #702cff, #a34dff);
@@ -87,26 +89,30 @@ body {
     background: #5420c9;
 }
 
+/* Profile Picture */
 .profile-circle {
     width: 250px;
     height: 250px;
+    min-width: 250px;
     border: 5px solid #9b5cff;
     border-radius: 50%;
+    overflow: hidden;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     background: #171b3d;
     box-shadow: 0 0 35px #793cff;
 }
 
-profile-circle img {
+.profile-circle img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center 35%;
     border-radius: 50%;
 }
-/* Content */
+
+/* Content Sections */
 .content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -136,6 +142,7 @@ profile-circle img {
     margin-bottom: 10px;
 }
 
+/* Skills */
 .skills span {
     display: inline-block;
     background: #252b4a;
@@ -144,6 +151,31 @@ profile-circle img {
     border-radius: 10px;
     margin: 6px;
     border: 1px solid #7044b9;
+}
+
+/* Project Cards */
+.project-card {
+    background: #1b2040;
+    border: 1px solid #7044b9;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 15px 0;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px #793cff;
+}
+
+.project-card h3 {
+    color: #b17cff;
+    margin-bottom: 12px;
+}
+
+.project-card p {
+    color: #d5d8e8;
+    margin-bottom: 10px;
 }
 
 /* Footer */
@@ -173,48 +205,4 @@ footer {
     .content {
         grid-template-columns: 1fr;
     }
-}
-.profile-circle {
-    width: 250px;
-    height: 250px;
-    min-width: 250px;
-    border: 5px solid #9b5cff;
-    border-radius: 50%;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 0 35px #793cff;
-}
-
-
-.profile-circle img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center 35%;
-    border-radius: 50%;
-}
-.project-card {
-    background: #1b2040;
-    border: 1px solid #7044b9;
-    border-radius: 12px;
-    padding: 20px;
-    margin: 15px 0;
-    transition: 0.3s;
-}
-
-.project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0 20px #793cff;
-}
-
-.project-card h3 {
-    color: #b17cff;
-    margin-bottom: 12px;
-}
-
-.project-card p {
-    color: #d5d8e8;
-    margin-bottom: 10px;
 }
